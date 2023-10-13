@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Customized Google Chrome Banner (CGCB)",
+  "version": "1.0",
+  "description": "Adds a customizable banner to the top of every webpage",
+  "permissions": ["storage", "<all_urls>"],
+  "action": {
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}

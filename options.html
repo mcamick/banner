@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGCB Options</title>
+    <script src="options.js"></script>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .options-container {
+            background-color: #3c3c3c;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            text-align: left;
+            width: 300px;
+        }
+        img {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto 30px;
+        }
+        label {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="color"] {
+            width: calc(100% - 20px);
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        input[type="text"] {
+            background-color: #f0f0f0;
+            color: black;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="options-container">
+        <img src="icon.png" alt="Logo">
+        <h2 style="text-align: center;">Customize CGCB Banner</h2>
+
+        <label for="color">Banner Color:</label>
+        <input type="color" id="color" name="color">
+
+        <label for="text">Banner Text:</label>
+        <input type="text" id="text" name="text">
+
+        <button id="save" style="display: block; width: 100%;">Save</button>
+    </div>
+</body>
+</html>
